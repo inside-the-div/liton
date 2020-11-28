@@ -1,0 +1,12 @@
+/* YOUR CUSTOM CSS */
+
+body{
+	color:#000;
+}
+.page-header h1{
+	font-size: 25px;
+}
+p,h1,h2,h3,h4,h5,h6,ul,a{
+	margin: 0px;
+}
+

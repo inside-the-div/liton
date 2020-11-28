@@ -1,0 +1,35 @@
+RewriteEngine On
+
+#=================send title as parameter===============
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^post/([0-9a-zA-Z_-]+) post.php?slug=$1 [NC,L]
+
+#=================send id as parameter================
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^number/([0-9]+) number.php?id=$1 [NC,L]
+
+#=================send title and id parameter================
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^post/([0-9]+)/([0-9a-zA-Z_-]+) post.php?id=$1&slug=$2 [NC,L]
+
+#=================send title as parameter===============
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php [NC,L]
+
+#=======================================================================
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [NC,L]
